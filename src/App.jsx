@@ -5,7 +5,7 @@ import Podium from "./components/Podium"
 
 function App() {
   return (
-    <div>
+    <div className="w-screen h-screen">
       <Header />
       <Podium />
     </div>
