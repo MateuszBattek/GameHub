@@ -5,7 +5,7 @@ export default function PodiumElement(props) {
   return (
   <div className="h-full w-full flex items-center justify-center flex-col">
       <div className={props.isPrimary  ? primaryDiv : notPrimaryDiv }> 
-      <div className={" shadow-lg opacity-50 bg-black flex flex-row rounded w-full justify-center p-2 py-" + props.py}>
+      <div className={" shadow-lg bg-opacity-50 bg-black flex flex-row rounded w-full justify-center p-2 py-" + props.py}>
         <div className="flex flex-col w-1/2">
           <div className="text-lg font-bold">Tytuł gry</div>
           <div className="px-0.5">Twórca gry</div>
