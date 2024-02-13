@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import GameBox from "./GameBox"
 import GamesList from "./GamesList"
 
@@ -37,10 +37,11 @@ const games = [
   },
 ]
 export default function AllGames() {
+  const [active, setActive] = useState(0)
   return (
     <div className="text-white py-20 m-28 flex items-center">
-      <GamesList games={games} />
-      <GameBox games={games} />
+      <GamesList games={games} setActive={setActive} />
+      <GameBox game={games.find((game) => game.key == active)} />
     </div>
   )
 }

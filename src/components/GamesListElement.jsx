@@ -2,7 +2,10 @@ import React from "react"
 
 export default function GamesListElement(props) {
   return (
-    <div className="flex justify-left items-center h-24 w-full bg-gradient-to-r from-sky-500 to-indigo-500 my-3 rounded">
+    <div
+      className="flex justify-left items-center h-24 w-full bg-gradient-to-r from-sky-500 to-indigo-500 my-3 rounded cursor-pointer"
+      onClick={() => props.setActive(props.game.key)}
+    >
       <img
         width="80"
         src={"./src/assets/" + props.game.name + ".jpg"}
