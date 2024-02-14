@@ -1,4 +1,13 @@
-html,body {
+html,
+body {
   background-color: #0f172a;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+/* best box-sizing practice */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
