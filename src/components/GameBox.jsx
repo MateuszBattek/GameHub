@@ -2,7 +2,7 @@ import React from "react"
 
 export default function GameBox(props) {
   return (
-    <div className="flex flex-col items-start justify-center w-5/12 mx-auto p-12">
+    <div className="flex flex-col self-start items-start justify-center w-5/12 mx-auto my-20 p-12">
       <iframe
         className="rounded"
         width="560"
@@ -11,7 +11,7 @@ export default function GameBox(props) {
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
-      ></iframe>
+      />
       <div className="flex flex-row w-11/12">
         <div className="flex flex-col w-3/4">
           <h3 className="p-2 font-bold text-2xl">{props.game.name}</h3>

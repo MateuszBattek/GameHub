@@ -35,12 +35,11 @@ const games = [
     author: "Square Enix",
     rate: 4,
   },
-  
 ]
 export default function AllGames() {
   const [active, setActive] = useState(0)
   return (
-    <div className="text-white py-20 m-28 flex items-center h-full">
+    <div className="text-white py-20 m-28 flex h-full">
       <GamesList games={games} setActive={setActive} />
       <GameBox game={games.find((game) => game.key == active)} />
     </div>
