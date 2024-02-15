@@ -3,7 +3,7 @@ import PodiumElement from "./PodiumElement"
 
 export default function Podium(props) {
   return (
-    <div className="text-white py-20 mx-48 flex flex-row justify-between items-center h-3/4">
+    <div className="text-white mb-20 flex flex-row justify-between items-center h-3/4">
       <PodiumElement />
       <PodiumElement isPrimary={true} />
       <PodiumElement />
