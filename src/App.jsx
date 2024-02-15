@@ -44,23 +44,32 @@ const games = [
     desc: "Gra opowiada o przygodach trzech bandziorów, których ścieżki niekiedy się przecinają, przez większość czasu jednak biegną osobno. Grać możemy każdym z nich, przełączając się na wybraną postać w dowolnym momencie oprócz misji, które przypisane są do konkretnych postaci.",
     author: "Rockstar Games",
     rate: 9.5,
-},
-{
-  key: 5,
-  name: "WatchDogs",
-  link: "https://www.youtube.com/embed/pc_U7tQwg8g?si=CF-6hYG3kJGa58nr",
-  desc: "Przygodowa gra akcji z widokiem z perspektywy trzeciej osoby (TPP), za której powstanie odpowiadają studia deweloperskie koncernu Ubisoft na czele z Ubisoft Montreal.",
-  author: "Ubisoft",
-  rate: 7.5,
-},
+  },
+  {
+    key: 5,
+    name: "WatchDogs",
+    link: "https://www.youtube.com/embed/pc_U7tQwg8g?si=CF-6hYG3kJGa58nr",
+    desc: "Przygodowa gra akcji z widokiem z perspektywy trzeciej osoby (TPP), za której powstanie odpowiadają studia deweloperskie koncernu Ubisoft na czele z Ubisoft Montreal.",
+    author: "Ubisoft",
+    rate: 7.5,
+  },
 ]
 
 function App() {
+  const [size, setSize] = useState(window.innerWidth >= 1024 ? "lg" : "sm")
+
+  const reportWindowSize = () => {
+    if (window.innerWidth >= 1024) setSize("lg")
+    else setSize("md")
+  }
+
+  window.addEventListener("resize", reportWindowSize)
+
   return (
     <div className="h-screen">
       <Header />
       <Podium games={games} />
-      <AllGames games={games} />
+      <AllGames games={games} size={size} />
     </div>
   )
 }
