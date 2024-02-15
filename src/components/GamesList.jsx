@@ -8,7 +8,7 @@ export default function GamesList(props) {
   ))
 
   return (
-    <div className="flex flex-col self-center items-center md:justify-start justify-center w-full md:w-5/12 px-12">
+    <div className="flex flex-col self-start items-center lg:justify-start justify-center w-full lg:w-5/12 px-12">
       {allGames}
     </div>
   )

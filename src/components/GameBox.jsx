@@ -2,7 +2,7 @@ import React from "react"
 
 export default function GameBox(props) {
   return (
-    <div className="flex flex-col self-center md:self-start items-start justify-center w-full md:w-5/12 md:my-32 p-12">
+    <div className="flex flex-col self-start lg:self-start items-start justify-center w-full lg:w-5/12 px-12">
       <div className="rounded relative w-full aspect-video overflow-hidden">
         <iframe
           className="rounded absolute w-full h-full inset-0"
