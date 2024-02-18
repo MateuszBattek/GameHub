@@ -2,7 +2,7 @@ import React from "react"
 export default function PodiumElement(props) {
   const scale = props.isPrimary ? "" : " scale-90"
   const primaryDiv =
-    "p-2 flex items-end justify-center shadow-sm rounded bg-gradient-to-r from-sky-500 to-indigo-500 w-3/4 aspect-[9/16]" +
+    "p-2 flex items-end justify-center shadow-sm rounded bg-gradient-to-r from-sky-500 to-indigo-500 w-4/5 h-full aspect-w-9 aspect-h-16" +
     scale
   return (
     <div className="h-full w-full flex items-center justify-center flex-col">

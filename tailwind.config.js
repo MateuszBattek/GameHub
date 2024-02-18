@@ -4,11 +4,7 @@ export default {
     "./index.html",
     './src/**/*.{html,js,jsx}'],
   theme: {
-    extend: {
-      aspectRatio: {
-        '9/16': '9 / 16',
-      }
-    }
+    extend: {},
   },
   plugins: [],
 }
