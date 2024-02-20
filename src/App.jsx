@@ -27,7 +27,7 @@ function App() {
     return (
       <div className="h-screen">
         <Header />
-        <Podium games={games} />
+        <Podium games={games} size={size} />
         <AllGames games={games} size={size} />
       </div>
     )
